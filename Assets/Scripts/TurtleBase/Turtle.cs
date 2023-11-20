@@ -6,7 +6,6 @@ namespace TurtleBase
     public class Turtle {
         
         private Transform _transform;
-        private Quaternion _rotation;
         private readonly Stack<TurtleTransform> _stack = new();
 
         private readonly GameObject _fragment;

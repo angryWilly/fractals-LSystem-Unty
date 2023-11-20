@@ -233,7 +233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &313459774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,59 +267,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &429408789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 429408791}
-  - component: {fileID: 429408790}
-  m_Layer: 0
-  m_Name: 3DFractal (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &429408790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429408789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe07c7b210f8432d93435d7a9f8aeae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fragmentPrefab: {fileID: 4965529146333694642, guid: bb9bdea0d4727f34e9c756ba38e50700, type: 3}
-  _axiom: X
-  _rule:
-  - _char: 88
-    _RulePattern: ^ X F X + F + X F & X F & X F + X F + X F ^ X
-  _angle: 90
-  _length: 1
-  _iterations: 3
---- !u!4 &429408791
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429408789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925569829 stripped
 GameObject:
@@ -350,12 +298,12 @@ GameObject:
   - component: {fileID: 1394419801}
   - component: {fileID: 1394419800}
   m_Layer: 0
-  m_Name: 3DFractal (1)
+  m_Name: 3DTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1394419800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,15 +317,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fragmentPrefab: {fileID: 4965529146333694642, guid: bb9bdea0d4727f34e9c756ba38e50700, type: 3}
-  _axiom: A
+  _axiom: X
   _rule:
-  - _char: 65
-    _RulePattern: -BF+AFA+FB-
-  - _char: 66
-    _RulePattern: +AF-BFB-FA+
-  _angle: 90
-  _length: 1
-  _iterations: 4
+  - _char: 88
+    _RulePattern: F[+X][-X]F[^X][&X]F[>X][<X]F
+  - _char: 70
+    _RulePattern: FF
+  _angle: 25.7
+  _length: 0.5
+  _iterations: 5
 --- !u!4 &1394419801
 Transform:
   m_ObjectHideFlags: 0
@@ -391,66 +339,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1697906466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1697906467}
-  - component: {fileID: 1697906468}
-  m_Layer: 0
-  m_Name: 3DFractal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1697906467
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697906466}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1697906468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697906466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe07c7b210f8432d93435d7a9f8aeae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fragmentPrefab: {fileID: 4965529146333694642, guid: bb9bdea0d4727f34e9c756ba38e50700, type: 3}
-  _axiom: A
-  _rule:
-  - _char: 65
-    _RulePattern: "B-F+CFC+F-D&F\u2227D-F+&&CFC+F+B//"
-  - _char: 66
-    _RulePattern: "A&F\u2227CFB\u2227F\u2227D\u2227\u2227-F-D\u2227|F\u2227B|FC\u2227F\u2227A//"
-  - _char: 67
-    _RulePattern: "|D\u2227|F\u2227B-F+C\u2227F\u2227A&&FA&F\u2227C+F+B\u2227F\u2227D// "
-  - _char: 68
-    _RulePattern: "|CFB-F+B|FA&F\u2227A&&FB-F+B|FC//"
-  _angle: 90
-  _length: 1
-  _iterations: 2
 --- !u!1001 &4051128476897411451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,11 +358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4051128476621831344, guid: 1436a1ca7020d1b428fa37f2ea7c5859, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4051128476621831344, guid: 1436a1ca7020d1b428fa37f2ea7c5859, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4051128476621831344, guid: 1436a1ca7020d1b428fa37f2ea7c5859, type: 3}
       propertyPath: m_LocalRotation.w
